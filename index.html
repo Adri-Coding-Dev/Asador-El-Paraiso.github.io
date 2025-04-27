@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="img/logo.ico">
+    <title>Asador El Paraíso - Córdoba</title>
+    <script>
+        function descargarPDF() {
+            const enlace = document.createElement('a');
+            enlace.href = 'Menu.pdf';
+            enlace.download = 'Menu.pdf';
+            enlace.click();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="img/logo.ico" alt="Logo" style="height: 25px;width: 25px;">
+                    <h2>Asador El Paraíso</h2>
+                </a>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click">
+                <i class="menu_btn bx bx-menu"></i>
+                <i class="close_btn bx bx-x"></i>
+            </label>
+            <ul>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#where">Donde Estamos</a></li>
+                <li><a href="#timing">Horarios de Apertura</a></li>
+                <li><a href="#pays">Opciones de Pago</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <a href="#reserve"><button class="btn">Reserva</button></a>
+                </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero_section">
+        <div class="section_container">
+            <div class="hero_container">
+                <div class="text_section">
+                    <h2 style="font-family: 'Loboto';color:white;" class="neon">Asador </h2><h2 style="color:rgb(0, 98, 255);" class="neonBlue">El Paraíso</h2>
+                    <h3>Hoy estamos abiertos hasta las 16:00 y de 20:00 a 00:00</h3>
+                    
+                    <div class="hero_section_button">
+                        <button class="button">Reserva</button>
+                        <button class="button">Ver Planes</button>
+                    </div>
+                </div>
+
+                <div class="image_section">
+                    <img src="img/asador-el-paraiso-color.jpg" alt="cafe">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="introduccion_section">
+        <div class="section_container">
+            <div class="introduccion_container">
+                <div class="text_section">
+                    <h2 style="text-align: center;margin-bottom: 20px;">Nuestra prioridad es la calidad y el buen servicio.</h2>
+                    <p>''Venga y disfrute en Asador El Paraíso de nuestra amplia carta, salones totalmente climatizados, uno de ellos cuenta con chimenea haciendo mas especiales los días fríos de invierno, música ambiental, amplia terraza y aparcamiento gratuito, castillo hinchable para los pequeños,  venga póngase cómodo y disfrute de un día inolvidable a tan solo 5 minutos de la ciudad.''</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about_us" id="about">
+        <div class="section_container">
+            <div class="about_container">
+                <div class="text_section">
+                    <h2 class="section_title">Menú</h2>
+                    <button onclick="descargarPDF()" class="btn-menu">Menú<i class='bx bxs-download' style="margin-left: 12px;"></i></button>
+                    <p>
+                        En <span class="neonBlue">Asador El Paraíso</span>, la cocina es mucho más que una técnica; es una <span style="color:rgb(0,255,0)">pasión</span> que se traduce en cada plato. Nos especializamos en el arte del asado, combinando <span style="color:gold;">tradición</span>, <span style="color:rgb(200,0,0);">calidad</span> y un profundo <span style="color:purple;">respeto</span> por los ingredientes para ofrecer una experiencia gastronómica <span class="neonBlue">
+                            única</span>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2 class="section_title">Dónde Estamos</h2>
+        <div class="section_container">
+            <div class="services_container">
+                <div class="services_items">
+                    <img src="" alt="">
+                    <div class="services_text">
+                        <h3><a href="https://www.google.es/maps/place/Asador+el+paraíso/@37.9229926,-4.7635684,20.25z/data=!4m6!3m5!1s0xd6cdfac977ef697:0x94c7c301f16336e3!8m2!3d37.9231577!4d-4.7636015!16s%2Fg%2F11b7q5g8dp?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank"><button class="btn">MOSTRAR MAPA <i class='bx bxs-map' style="color:red;"></i></button></a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="why_us" id="why">
+        <h2 class="section_title">Haz tu Reserva!</h2>
+        <div class="section_container">
+            <div class="why_container">
+                <div class="why_items">
+                    <div class="why_us_text">
+                        <h3><a href="tel:644250482">LLÁMANOS PARA REALIZAR TU RESERVA <i class='bx bxs-phone-call'></i></a></h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="horarios">
+        <div class="section_container_horarios">
+            <div class="horarios_container">
+                <div class="text_section">
+                    <h2 class="horarios_title" id="timing">Nuestros</h2>
+                    <h3>Horarios de apertura</h3>
+                </div>
+                <div class="horarios_items">
+                    <ul>
+                        <li><h2>Lunes</h2><p>11:00 - 16:30</p></li>
+                        <li><h2>Martes</h2><p>11:00 - 16:30</p></li>
+                        <li><h2>Miércoles</h2><p>11:00 - 16:30</p></li>
+                        <li><h2>Jueves</h2><p>11:00 - 16:30</p></li>
+                        <li><h2>Viernes</h2><p>11:00 - 16:00</p></li>
+                        <li><h2>Sábado</h2><p>20:00 - 00:00</p></li>
+                        <li><h2>Domingo</h2><p>11:00 - 16:30</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="opciones-pago">
+        <div class="section_container">
+            <div class="opciones_container">
+                <div class="text_section">
+                    <h2 class="horarios_title" id="pays">Disponible</h2>
+                    <h3>Opciones de Pago</h3>
+                </div>
+                <div class="opciones_items">
+                    <i class='bx bx-bitcoin' ></i>
+                    <i class='bx bx-wallet' ></i>
+                    <i class='bx bxs-credit-card-alt'></i>
+                    <i class='bx bxs-credit-card' ></i>
+                    <i class='bx bxl-mastercard'></i>
+                    <i class='bx bxs-credit-card-front' ></i>
+                    <i class='bx bx-money'></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="servicios">
+        <div class="section_container">
+            <div class="servicios_container">
+                <div class="text_section">
+                    <h2 class="horarios_title">Nuestros</h2>
+                    <h3>Servicios</h3>
+                </div>
+                <div class="servicios_items">
+                    <ul>
+                        <li>
+                            <i class='bx bx-accessibility'></i>
+                        </li>
+                        <li>
+                            <i class='bx bx-restaurant'></i>
+                        </li>
+                        <li>
+                            <i class='bx bx-wind'></i>
+                        </li>
+                        <li>
+                            <i class='bx bxs-baby-carriage'></i>
+                        </li>
+                        <li>
+                            <i class='bx bx-map'></i>
+                        </li>
+                        <li>
+                            <i class='bx bxs-parking' ></i>
+                        </li>
+                        <li>
+                            <i class='bx bx-block'></i>
+                        </li>
+                        <li>
+                            <i class='bx bxs-shopping-bag' ></i>
+                        </li>
+                        <li>
+                            <i class='bx bxs-dog'></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="section_container">
+            <div class="title">
+                <h2 style="text-align: center;font-size: 2rem;color:#007aff;">Contactanos</h2>
+            </div>
+            <div class="contact_container">
+                <div class="contact_form">
+                    <form action="#">
+                        <div class="field">
+                            <label for="Name">Nombre</label>
+                            <input type="text" id="name" placeholder="Introduce tu Nombre" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Correo Electronico</label>
+                            <input type="email" id="email"placeholder="Introduce tu correo electrónico" required>
+                        </div>
+                        <div class="field">
+                            <label for="number">Nº de Telefono</label>
+                            <input type="number" id="number" placeholder="Introduce tu Número de Correo" required>
+                        </div>
+                        <div class="field">
+                            <label for="textarea">Comentarios</label>
+                            <textarea name="textarea" id="textarea" placeholder="Escribe aqui tu comentario" style="height: 100px;width: 450px;"></textarea>
+                        </div>
+                        <button class="button" id="sumbit">Enviar</button>
+                    </form>
+                </div>
+                <div class="contact_text">
+                    <div class="contact_items">
+                        <i class="bx bx.current-location"></i>
+                        <div class="contact_details">
+                            <h3>Donde Estamos?</h3>
+                            <p>Córdoba, España</p>
+                        </div>
+                    </div>
+                    <div class="contact_items">
+                        <i class="bx bxs-envelope"></i>
+                        <div class="contact_details">
+                            <h3>Adri Coding Dev</h3>
+                            <p>adricoding@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact_items">
+                        <i class="bx bxs-phone-call"></i>
+                        <div class="contact_details">
+                            <h3>Llamanos</h3>
+                            <p>+34 644250482</p>
+                        </div>
+                    </div>
+                    <div class="contact_items">
+                        <i class="bx bxs-time-five"></i>
+                        <div class="contact_details">
+                            <h3>Horarios</h3>
+                            <p><a href="#timing" style="color: rgb(46, 46, 46);">Aqui!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="section_container">
+            <div class="footer_section">
+                <div class="footer_logo">
+                    <a href="#" target="_blank">
+                        <img src="img/logo.ico" alt="logo">
+                        <h2>Sorpresa para Esteban Piñol</h2>
+                    </a>
+                    <label for="name">Introduce tu Nombre y tu primer Apellido (1º letras en Mayúscula)</label><br>
+                    <input type="text" placeholder="Ej: Adrian Velasco" required id="nombre">
+                    <button onclick="sorpresa();">IR a la sorpresa</button><br>
+                    <span id="span-name"></span>
+                </div>
+                <div class="useful_links">
+                    <h3>Atajos de Navegacion</h3>
+                    <ul>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#where">Donde Estamos</a></li>
+                        <li><a href="#timing">Horarios de Apertura</a></li>
+                        <li><a href="#pays">Opciones de Pago</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                    </ul>
+                </div>
+                <div class="contact_us">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="bx bx-current-location"></i><span>Córdoba, España</span></li>
+                        <li>
+                            <i class="bx bxs-phone-call"></i>
+                            <span>+34 644250482</span>
+                        </li>
+                        <li>
+                            <i class="bx bxs-time-five"></i>
+                            <span><a href="#timing">Horarios</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="follow_us">
+                    <h3>Siguenos</h3>
+                    <i class="bx bxl-facebook-circle"></i>
+                    <i class="bx bxl-twitter"></i>
+                    <i class="bx bxl-instagram-alt"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function sorpresa() {
+            const name = document.getElementById("nombre").value.trim();
+            const nameMSG = document.getElementById("span-name");
+            const correctName = "Esteban Piñol";
+            let formIsValid = true;
+
+            if (name === correctName) {
+                nameMSG.textContent = "✔ Nombre válido";
+                nameMSG.className = "valido";
+            } else {
+                nameMSG.textContent = "No eres el Hombre que buscamos....";
+                nameMSG.className = "invalido";
+                formIsValid = false;
+            }
+            if (formIsValid) {
+                window.location.href = "sorpresa.html";
+            }
+        }
+    </script>
+</body>
+</html>
