@@ -267,14 +267,6 @@
         <div class="section_container">
             <div class="footer_section">
                 <div class="footer_logo">
-                    <a href="#" target="_blank">
-                        <img src="img/logo.ico" alt="logo">
-                        <h2>Sorpresa para Esteban Piñol</h2>
-                    </a>
-                    <label for="name">Introduce tu Nombre y tu primer Apellido (1º letras en Mayúscula)</label><br>
-                    <input type="text" placeholder="Ej: Adrian Velasco" required id="nombre">
-                    <button onclick="sorpresa();">IR a la sorpresa</button><br>
-                    <span id="span-name"></span>
                 </div>
                 <div class="useful_links">
                     <h3>Atajos de Navegacion</h3>
@@ -309,25 +301,5 @@
             </div>
         </div>
     </footer>
-    <script>
-        function sorpresa() {
-            const name = document.getElementById("nombre").value.trim();
-            const nameMSG = document.getElementById("span-name");
-            const correctName = "Esteban Piñol";
-            let formIsValid = true;
-
-            if (name === correctName) {
-                nameMSG.textContent = "✔ Nombre válido";
-                nameMSG.className = "valido";
-            } else {
-                nameMSG.textContent = "No eres el Hombre que buscamos....";
-                nameMSG.className = "invalido";
-                formIsValid = false;
-            }
-            if (formIsValid) {
-                window.location.href = "sorpresa.html";
-            }
-        }
-    </script>
 </body>
 </html>
